@@ -1,0 +1,28 @@
+[package]
+name = "udp-rtt"
+version = "0.1.0"
+authors = ["Mike McDermott "]
+license = "MIT"
+keywords = ["time", "date", "rtt"]
+repository = "https://github.com/xkortex/udp-rtt"
+description = "Determines round trip time between computers"
+readme = "README.md"
+
+
+[dependencies]
+chrono = "0.4"
+log = "0.4"
+
+clap = "2"
+
+time = "0.1"
+
+
+
+[features]
+default = []
+
+
+[[bin]]
+name = "udp-rtt"
+path = "src/udp-rtt.rs"
